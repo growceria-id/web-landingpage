@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import growceria from '../../images/Growceria SVG_landscape all white.svg'
 import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll';
-import { Nav, NavbarContainer, NavbarLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavbarContainer, NavbarLogo, ImageLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -27,7 +27,9 @@ const Navbar = ({ toggle }) => {
   <>
     <Nav scrollNav={scrollNav}>
       <NavbarContainer>
-        <NavbarLogo to='/' onClick={toggleHome} src={growceria} />
+        <NavbarLogo to='/' onClick={toggleHome}>
+          <ImageLogo src={growceria} />
+        </NavbarLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
@@ -46,7 +48,7 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='unduh' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Unduh</NavBtnLink>
+          <NavBtnLink to='/unduh' onClick={toggleHome}>Unduh</NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </Nav>

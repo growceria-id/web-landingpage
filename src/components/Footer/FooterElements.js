@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-    height: 260px;
+    height: 100%;
     background: #701A53;
     display: flex;
     flex-direction: column;
@@ -9,11 +9,11 @@ export const FooterContainer = styled.div`
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        height: 500px;
+        padding-bottom: 30px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 800px;
+        padding-bottom: 50px;
     }
 `
 

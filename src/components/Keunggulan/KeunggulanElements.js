@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
 export const KeunggulanContainer = styled.div`
-    max-height: 800px;
+    height: 100%;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #fff;
-
-    @media screen and (max-width: 768px) {
-        max-height: 1200px;
-    }
 `
 
 export const KeunggulanWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 600px;
+    height: 100%;
     width: 100%;
     max-width: 1200px;
     margin-right: auto;
@@ -26,7 +23,7 @@ export const KeunggulanWrapper = styled.div`
     align-items: center;
     grid-template-columns: 35% 65%;
 
-    @media screen and (max-width: 480x) {
+    @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
     }
 `
@@ -52,7 +49,6 @@ export const Col1 = styled.div`
 
 export const ImageWrap = styled.div`
     max-width: 300px;
-    
     height: 100%;
 `
 
@@ -74,7 +70,7 @@ export const PointWrapper = styled.div`
 export const Point = styled.div`
     display: grid;
     grid-template-columns: 15% 85%;
-    max-height: 100px;
+    grid-gap: 25px;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
@@ -107,7 +103,6 @@ export const Numbering = styled.p`
 export const PointHolder = styled.div`
     background: #FEEFFA;
     width: 100%;
-    max-height: 150px;
     align-items: center;
     justify-content: center;
     padding: 15px 30px;

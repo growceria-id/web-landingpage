@@ -2,18 +2,19 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({top}) => (top ? 'linear-gradient(180deg, #8C2C6C 0%, #C4C4C4 0%, rgba(196, 196, 196, 0.989583) 0.01%, rgba(196, 196, 196, 0.979373) 0.02%, rgba(196, 196, 196, 0.974467) 0.03%, #8C2C6C 0.04%, rgba(171, 60, 143, 0.72) 100%)' : 'linear-gradient(180deg, rgba(209, 15, 157, 0.41) 0%, #701A53 100%)')};
+    background: ${({top}) => (top ? 'linear-gradient(180deg, #8C2C6C 0%, #C4C4C4 0%, rgba(196, 196, 196, 0.989583) 0.01%, rgba(196, 196, 196, 0.979373) 0.02%, rgba(196, 196, 196, 0.974467) 0.03%, #8C2C6C 0.04%, rgba(171, 60, 143, 0.72) 100%)' : 'linear-gradient(180deg, #FF8DE0 0%, #701A53 100%)')};
 
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        max-height: 1200px;
     }
 `
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 600px;
+    height: 100%;
     width: 100%;
     max-width: 1200px;
     margin-right: auto;
