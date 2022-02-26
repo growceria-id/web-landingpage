@@ -9,13 +9,13 @@ const Sidebar = ({isOpen, toggle}) => {
     </Icon>
     <SidebarWrapper>
         <SidebarMenu>
-            <SidebarLink to='tentang' onClick={toggle}>Tentang</SidebarLink>
-            <SidebarLink to='fitur' onClick={toggle}>Fitur</SidebarLink>
-            <SidebarLink to='keunggulan' onClick={toggle}>Keunggulan</SidebarLink>
-            <SidebarLink to='bantuan' onClick={toggle}>Bantuan</SidebarLink>
+            <SidebarLink to='tentang' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Tentang</SidebarLink>
+            <SidebarLink to='fitur' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Fitur</SidebarLink>
+            <SidebarLink to='keunggulan' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Keunggulan</SidebarLink>
+            <SidebarLink to='bantuan' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Bantuan</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-            <SidebarRoute to='unduh'>Unduh</SidebarRoute>
+            <SidebarRoute to='/unduh'>Unduh</SidebarRoute>
         </SideBtnWrap>
     </SidebarWrapper>
   </SidebarContainer>

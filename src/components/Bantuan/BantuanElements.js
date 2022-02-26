@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const BantuanContainer = styled.div`
+    padding-top: 20px;
+    padding-bottom: 50px;
     max-height: 750px;
     display: flex;
     flex-direction: column;
@@ -18,22 +20,22 @@ export const BantuanContainer = styled.div`
 `
 
 export const BantuanWrapper = styled.div`
-    max-width: 1200px;
+    width: 75vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0 20px;
 `
 
 export const Pertanyaan = styled.div`
     background: #fff;
-    width: 1000px;
-    max-height: 70px;
+    width: 100%;
     display: grid;
     grid-template-columns: 90% 10%;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     padding: 25px 25px;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
     border-radius: 36px;
@@ -68,6 +70,24 @@ export const PertanyaanIcon = styled.div`
     font-size: 1.3rem;
     cursor: pointer;
     color: #DCDCDC;
+`
+
+export const Jawaban = styled.div`
+    background: #FEEFFA;
+    width: 100%;
+    margin-top: -15px;
+    /* max-height: 75px; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 25px 25px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+`
+
+export const JawabanP = styled.p`
+    font-size: 18px;
+    text-align: left;
 `
 
 // /* FAQ */

@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 export const FiturContainer = styled.div`
-    height: 700px;
+    height: 100%;
+    padding-top: 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #fff;
 
-    @media screen and (max-width: 768px) {
+    ${'' /* @media screen and (max-width: 768px) {
         height: 1100px;
     }
 
     @media screen and (max-width: 480px) {
         height: 1300px;
-    }
+    } */}
 `
 
 export const FiturWrapper = styled.div`
@@ -26,7 +27,7 @@ export const FiturWrapper = styled.div`
     grid-gap: 25px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1000x) {
+    @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
     }
 
