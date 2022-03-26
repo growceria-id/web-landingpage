@@ -1,6 +1,6 @@
 {
   "short_name": "growceria",
-  "name": "growceria: Sahabat Grosir Anda!",
+  "name": "growceria",
   "icons": [
     {
       "src": "growceria-magenta.ico",
@@ -17,9 +17,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
