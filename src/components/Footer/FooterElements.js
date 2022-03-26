@@ -1,83 +1,83 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-    height: 100%;
-    background: #701A53;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  background: #701a53;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    @media screen and (max-width: 768px) {
-        padding-bottom: 30px;
-    }
+  @media screen and (max-width: 768px) {
+    padding-bottom: 30px;
+  }
 
-    @media screen and (max-width: 480px) {
-        padding-bottom: 50px;
-    }
-`
+  @media screen and (max-width: 480px) {
+    padding-bottom: 50px;
+  }
+`;
 
 export const FooterWrapper = styled.div`
-    max-width: 1200px;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 40px;
+  max-width: 1200px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 40px;
+  padding: 0 20px;
+
+  @media screen and (max-width: 1000x) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
     padding: 0 20px;
-
-    @media screen and (max-width: 1000x) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-    }
-`
+  }
+`;
 
 export const Column = styled.div`
-    margin-bottom: 10px;
-    padding: 0 15px;
-`
+  margin-bottom: 10px;
+  padding: 0 15px;
+`;
 
 export const ImgWrap = styled.div`
-    max-width: 300px;
-    height: 100%;
-`
+  max-width: 300px;
+  height: 100%;
+`;
 
 export const Img = styled.img`
-    width: 100%;
-    margin: 0 0 15px 0;
-    padding-right: 0;
-    cursor: pointer;
-`
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding-right: 0;
+  cursor: pointer;
+`;
 
-export const SmallImg = styled.img `
-    max-width: 40px;
-    max-height: 35px;
-    padding-right: 10px;
-`
+export const SmallImg = styled.img`
+  max-width: 40px;
+  max-height: 35px;
+  padding-right: 10px;
+`;
 
 export const Judul = styled.h3`
-    font-size: 16px;
-    margin-bottom: 30px;
-    text-align: left;
-    color: #fff;
-`
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #fff;
+`;
 
 export const ImgJudul = styled.h3`
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #fff;
-`
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #fff;
+`;
 
 export const Deskripsi = styled.p`
-    font-size: 16px;
-    text-align: left; 
-    color: #fff;
-`
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+`;
 
 // /* Footer */
 
@@ -86,8 +86,6 @@ export const Deskripsi = styled.p`
 // height: 214px;
 // left: 0px;
 // top: 3946px;
-
-
 
 // /* Rectangle 9 */
 
@@ -98,7 +96,6 @@ export const Deskripsi = styled.p`
 // top: 3946px;
 
 // background: #701A53;
-
 
 // /* growceria.id@gmail.com */
 
@@ -116,8 +113,6 @@ export const Deskripsi = styled.p`
 
 // color: #FFFFFF;
 
-
-
 // /* Hubungi Kami */
 
 // position: absolute;
@@ -133,8 +128,6 @@ export const Deskripsi = styled.p`
 // line-height: 29px;
 
 // color: #FFFFFF;
-
-
 
 // /* Social Media */
 
@@ -152,8 +145,6 @@ export const Deskripsi = styled.p`
 
 // color: #FFFFFF;
 
-
-
 // /* Phone */
 
 // position: absolute;
@@ -169,8 +160,6 @@ export const Deskripsi = styled.p`
 // line-height: 29px;
 
 // color: #FFFFFF;
-
-
 
 // /* +62 830 76876322 */
 
@@ -188,8 +177,6 @@ export const Deskripsi = styled.p`
 
 // color: #FFFFFF;
 
-
-
 // /* Final logo_landscape all white 1 */
 
 // position: absolute;
@@ -199,7 +186,6 @@ export const Deskripsi = styled.p`
 // top: 4007px;
 
 // background: url(Final logo_landscape all white.png);
-
 
 // /* instagram */
 
@@ -211,7 +197,6 @@ export const Deskripsi = styled.p`
 
 // background: url(instagram.png);
 
-
 // /* facebook-app-symbol */
 
 // position: absolute;
@@ -221,7 +206,6 @@ export const Deskripsi = styled.p`
 // top: 4044px;
 
 // background: url(facebook-app-symbol.png);
-
 
 // /* linkedin-logo */
 
