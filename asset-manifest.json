@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.50bca76d.css",
-    "main.js": "/static/js/main.1ba5edf7.js",
+    "main.js": "/static/js/main.17cec10f.js",
     "static/media/Barcode-amico.png": "/static/media/Barcode-amico.fab45ec8be343986fc05.png",
     "static/media/In no time-amico.png": "/static/media/In no time-amico.fbea5b247fce826c6873.png",
     "static/media/Discount-cuate.png": "/static/media/Discount-cuate.6c89a8df879e81c0d3f6.png",
@@ -12,10 +12,10 @@
     "static/media/Growceria SVG_landscape all white.svg": "/static/media/Growceria SVG_landscape all white.b3de233d25ea82837d48f7af44f3e9e1.svg",
     "index.html": "/index.html",
     "main.50bca76d.css.map": "/static/css/main.50bca76d.css.map",
-    "main.1ba5edf7.js.map": "/static/js/main.1ba5edf7.js.map"
+    "main.17cec10f.js.map": "/static/js/main.17cec10f.js.map"
   },
   "entrypoints": [
     "static/css/main.50bca76d.css",
-    "static/js/main.1ba5edf7.js"
+    "static/js/main.17cec10f.js"
   ]
 }
