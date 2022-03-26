@@ -1,7 +1,7 @@
 {
   "name": "web-landingpage",
-  "homepage": "https://growceria.github.io/web-landingpage",
-  "version": "0.1.0",
+  "homepage": "http://growceria.github.io/web-landingpage",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
