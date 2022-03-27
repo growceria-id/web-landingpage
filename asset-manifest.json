@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/web-landingpage/static/css/main.50bca76d.css",
-    "main.js": "/web-landingpage/static/js/main.fd53b529.js",
-    "static/media/Flat iPhone.png": "/web-landingpage/static/media/Flat iPhone.f446b4cf57a8723e7f94.png",
+    "main.js": "/web-landingpage/static/js/main.2d095cca.js",
     "index.html": "/web-landingpage/index.html",
     "main.50bca76d.css.map": "/web-landingpage/static/css/main.50bca76d.css.map",
-    "main.fd53b529.js.map": "/web-landingpage/static/js/main.fd53b529.js.map"
+    "main.2d095cca.js.map": "/web-landingpage/static/js/main.2d095cca.js.map"
   },
   "entrypoints": [
     "static/css/main.50bca76d.css",
-    "static/js/main.fd53b529.js"
+    "static/js/main.2d095cca.js"
   ]
 }
