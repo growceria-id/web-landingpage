@@ -1,8 +1,4 @@
 import { animateScroll as scroll } from "react-scroll";
-import facebook from "../../images/facebook-app-symbol.png";
-import growceriaLogo from "../../images/Growceria SVG_landscape all white.svg";
-import instagram from "../../images/instagram.png";
-import linkedin from "../../images/linkedin-logo.png";
 import {
   Column,
   Deskripsi,
@@ -26,7 +22,11 @@ const Footer = () => {
         <FooterWrapper>
           <Column>
             <ImgWrap>
-              <Img to="/" onClick={toggleHome} src={growceriaLogo} />
+              <Img
+                to="/"
+                onClick={toggleHome}
+                src={`./images/Growceria SVG_landscape all white.svg`}
+              />
             </ImgWrap>
           </Column>
           <Column>
@@ -41,13 +41,13 @@ const Footer = () => {
             <ImgJudul>Social Media</ImgJudul>
             <ImgWrap>
               <a href="https://www.facebook.com/growceria">
-                <SmallImg src={facebook} />
+                <SmallImg src={`./images/facebook-app-symbol.png`} />
               </a>
               <a href="https://www.instagram.com/growceria?utm_medium=copy_link">
-                <SmallImg src={instagram} />
+                <SmallImg src={`./images/instagram.png`} />
               </a>
               <a href="https://www.linkedin.com/company/growceria">
-                <SmallImg src={linkedin} />
+                <SmallImg src={`./images/linkedin-logo.png`} />
               </a>
             </ImgWrap>
           </Column>

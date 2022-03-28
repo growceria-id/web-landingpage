@@ -1,94 +1,111 @@
 import styled from "styled-components";
 
 export const BantuanContainer = styled.div`
-    padding-top: 20px;
-    padding-bottom: 50px;
-    max-height: 750px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  max-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 
-    @media screen and (max-width: 768px) {
-        max-height: 1100px;
-    }
+  @media screen and (max-width: 768px) {
+    max-height: 1100px;
+  }
 
-    @media screen and (max-width: 480px) {
-        max-height: 1300px;
-    }
-`
+  @media screen and (max-width: 480px) {
+    max-height: 1300px;
+  }
+`;
 
 export const BantuanWrapper = styled.div`
-    width: 75vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-`
+  width: 75vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+`;
 
 export const Pertanyaan = styled.div`
-    background: #fff;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    padding: 25px 25px;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 36px;
-    transition: all 0.2s ease-in-out;
+  background: #fff;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 90% 10%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 25px 25px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  transition: all 0.2s ease-in-out;
 
-    &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-    }
-`
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media screen and (max-width: 480px) {
+    border-radius: 20px;
+  }
+`;
 
 export const BantuanH1 = styled.h1`
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 64px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 64px;
 
-    @media screen and (max-width: 480px) {
-        font-size: 26px;
-    }
-`
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+  }
+`;
 
 export const PertanyaanP = styled.p`
-    font-size: 18px;
-    text-align: left;
-`
+  font-size: 18px;
+  text-align: left;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
 
 export const PertanyaanIcon = styled.div`
-    display: flex;
-    align-items: center;
-    direction: rtl;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: #DCDCDC;
-`
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #dcdcdc;
+`;
 
 export const Jawaban = styled.div`
-    background: #FEEFFA;
-    width: 100%;
-    margin-top: -15px;
-    /* max-height: 75px; */
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    padding: 25px 25px;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 36px;
-`
+  background: #feeffa;
+  width: 100%;
+  margin-top: -15px;
+  /* max-height: 75px; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 25px 25px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+
+  @media screen and (max-width: 480px) {
+    border-radius: 20px;
+  }
+`;
 
 export const JawabanP = styled.p`
-    font-size: 18px;
-    text-align: left;
-`
+  font-size: 18px;
+  text-align: left;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+`;
 
 // /* FAQ */
 
@@ -97,8 +114,6 @@ export const JawabanP = styled.p`
 // height: 742px;
 // left: 0px;
 // top: 2483px;
-
-
 
 // /* Rectangle 9 */
 
@@ -110,7 +125,6 @@ export const JawabanP = styled.p`
 
 // background: #FFFFFF;
 
-
 // /* Pertanyaan 4 */
 
 // position: absolute;
@@ -118,8 +132,6 @@ export const JawabanP = styled.p`
 // height: 110px;
 // left: 202px;
 // top: 3046px;
-
-
 
 // /* Rectangle 3 */
 
@@ -133,7 +145,6 @@ export const JawabanP = styled.p`
 // box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 // border-radius: 36px;
 
-
 // /* Vector */
 
 // position: absolute;
@@ -143,7 +154,6 @@ export const JawabanP = styled.p`
 // bottom: 25.28%;
 
 // background: #B7B7B7;
-
 
 // /* Apakah ada minimum order. Syarat dan ketentuan untuk retur */
 
@@ -164,8 +174,6 @@ export const JawabanP = styled.p`
 
 // color: #000000;
 
-
-
 // /* Pertanyaan 3 */
 
 // position: absolute;
@@ -173,8 +181,6 @@ export const JawabanP = styled.p`
 // height: 110px;
 // left: 204px;
 // top: 2901px;
-
-
 
 // /* Rectangle 3 */
 
@@ -188,7 +194,6 @@ export const JawabanP = styled.p`
 // box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 // border-radius: 36px;
 
-
 // /* Vector */
 
 // position: absolute;
@@ -198,7 +203,6 @@ export const JawabanP = styled.p`
 // bottom: 28.76%;
 
 // background: #B7B7B7;
-
 
 // /* Bagaimana cara bergabung */
 
@@ -219,8 +223,6 @@ export const JawabanP = styled.p`
 
 // color: #000000;
 
-
-
 // /* Pertanyaan 2 */
 
 // position: absolute;
@@ -228,8 +230,6 @@ export const JawabanP = styled.p`
 // height: 110px;
 // left: 202px;
 // top: 2756px;
-
-
 
 // /* Rectangle 3 */
 
@@ -243,7 +243,6 @@ export const JawabanP = styled.p`
 // box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 // border-radius: 36px;
 
-
 // /* Vector */
 
 // position: absolute;
@@ -253,7 +252,6 @@ export const JawabanP = styled.p`
 // bottom: 32.25%;
 
 // background: #B7B7B7;
-
 
 // /* Bagaimana cara bergabung */
 
@@ -274,8 +272,6 @@ export const JawabanP = styled.p`
 
 // color: #000000;
 
-
-
 // /* Pertanyaan 1 */
 
 // position: absolute;
@@ -283,8 +279,6 @@ export const JawabanP = styled.p`
 // height: 110px;
 // left: 202px;
 // top: 2611px;
-
-
 
 // /* Rectangle 3 */
 
@@ -298,7 +292,6 @@ export const JawabanP = styled.p`
 // box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 // border-radius: 36px;
 
-
 // /* Vector */
 
 // position: absolute;
@@ -308,7 +301,6 @@ export const JawabanP = styled.p`
 // bottom: 35.73%;
 
 // background: #B7B7B7;
-
 
 // /* Bagaimana cara bergabung */
 
@@ -329,8 +321,6 @@ export const JawabanP = styled.p`
 
 // color: #000000;
 
-
-
 // /* Bantuan */
 
 // position: absolute;
@@ -348,4 +338,3 @@ export const JawabanP = styled.p`
 // letter-spacing: -0.02em;
 
 // color: #000000;
-
