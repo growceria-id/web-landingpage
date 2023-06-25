@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../ButtonElement';
+import { AnchorButton } from '../ButtonElement';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap } from './InfoElements';
 
 const Info = ({top, id, imgStart, topLine, headline, description, buttonLabel, img, alt}) => {
@@ -14,7 +14,7 @@ const Info = ({top, id, imgStart, topLine, headline, description, buttonLabel, i
                         <Heading>{headline}</Heading>
                         <Subtitle>{description}</Subtitle>
                         <BtnWrap>
-                            <Button to='unduh' smooth={true} duration={500} spy={true} exact='true' offset={-80}>{buttonLabel}</Button>
+                            <AnchorButton target="_blank" href='https://play.google.com/store/apps/details?id=com.jason1152.growceriamobileclient'>{buttonLabel}</AnchorButton>
                         </BtnWrap>
                     </TextWrapper>
                 </Column1>
