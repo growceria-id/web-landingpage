@@ -13,6 +13,8 @@ import {
   NavLinks,
   NavMenu,
 } from "./NavbarElements";
+import { BtnWrap } from "../Info/InfoElements";
+import { AnchorButton } from "../ButtonElement";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -93,10 +95,9 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
+          
           <NavBtn>
-            <NavBtnLink to="/unduh" onClick={toggleHome}>
-              Unduh
-            </NavBtnLink>
+            <AnchorButton target="_blank" href='https://play.google.com/store/apps/details?id=com.jason1152.growceriamobileclient'>Unduh</AnchorButton>
           </NavBtn>
         </NavbarContainer>
       </Nav>
