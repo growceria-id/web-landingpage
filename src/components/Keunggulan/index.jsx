@@ -9,7 +9,7 @@ import {
 } from "./KeunggulanElements";
 import { Point1, Point2, Point3, Point4 } from "./PointData";
 import PointDiv from "./PointDiv";
-
+import FlatIphone from "../../images/Flat iPhone.png";
 const Keunggulan = () => {
   return (
     <>
@@ -18,7 +18,7 @@ const Keunggulan = () => {
         <KeunggulanWrapper>
           <Col1>
             <ImageWrap>
-              <PhoneImage src="./images/Flat iPhone.png" alt="Keunggulan" />
+              <PhoneImage src={FlatIphone} alt="Keunggulan" />
             </ImageWrap>
           </Col1>
           <Col1>

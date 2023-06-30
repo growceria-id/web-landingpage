@@ -10,7 +10,10 @@ import {
   Judul,
   SmallImg,
 } from "./FooterElements";
-
+import FacebookAppSymbol from "../../images/facebook-app-symbol.png";
+import InstagramAppSymbol from "../../images/instagram.png";
+import LinkedinAppSymbol from "../../images/linkedin-logo.png";
+import GrowceriaLandscapeAllWhite from "../../images/Growceria SVG_landscape all white.svg";
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -25,7 +28,7 @@ const Footer = () => {
               <Img
                 to="/"
                 onClick={toggleHome}
-                src={`./images/Growceria SVG_landscape all white.svg`}
+                src={GrowceriaLandscapeAllWhite}
               />
             </ImgWrap>
           </Column>
@@ -41,13 +44,13 @@ const Footer = () => {
             <ImgJudul>Social Media</ImgJudul>
             <ImgWrap>
               <a href="https://www.facebook.com/growceria">
-                <SmallImg src={`./images/facebook-app-symbol.png`} />
+                <SmallImg src={FacebookAppSymbol} />
               </a>
               <a href="https://www.instagram.com/growceria?utm_medium=copy_link">
-                <SmallImg src={`./images/instagram.png`} />
+                <SmallImg src={InstagramAppSymbol} />
               </a>
               <a href="https://www.linkedin.com/company/growceria">
-                <SmallImg src={`./images/linkedin-logo.png`} />
+                <SmallImg src={LinkedinAppSymbol} />
               </a>
             </ImgWrap>
           </Column>
