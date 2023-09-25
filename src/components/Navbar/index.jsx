@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
+import { AnchorButton } from "../ButtonElement";
 import {
   ImageLogo,
   MobileIcon,
   Nav,
-  NavbarContainer,
-  NavbarLogo,
   NavBtn,
-  NavBtnLink,
   NavItem,
   NavLinks,
   NavMenu,
+  NavbarContainer,
+  NavbarLogo,
+  Navlinkr
 } from "./NavbarElements";
-import { BtnWrap } from "../Info/InfoElements";
-import { AnchorButton } from "../ButtonElement";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -93,6 +92,17 @@ const Navbar = ({ toggle }) => {
               >
                 Bantuan
               </NavLinks>
+            </NavItem>
+            <NavItem>
+              <Navlinkr
+                to="/syarat-ketentuan"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+              >
+                Syarat dan Ketentuan
+              </Navlinkr>
             </NavItem>
           </NavMenu>
           
