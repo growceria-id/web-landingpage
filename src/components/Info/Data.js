@@ -1,8 +1,11 @@
+import OnlineGroceriesPana2 from "../../images/Online Groceries-pana-2.png";
+import AppInstallationCuate from "../../images/App installation-cuate.png";
+
 export const tentang = {
   id: "tentang",
   top: true,
   imgStart: true,
-  img: `./images/Online Groceries-pana-2.png`,
+  img: OnlineGroceriesPana2,
   alt: "growceria",
   topLine: "",
   headline: "Menyuplai kebutuhan bahan-bahan segar bagi bisnis Anda",
@@ -15,7 +18,7 @@ export const unduh = {
   id: "unduh",
   top: false,
   imgStart: false,
-  img: `./images/App installation-cuate.png`,
+  img: AppInstallationCuate,
   alt: "growceria",
   topLine: "",
   headline: "Segera bergabung bersama kami di growceria",
