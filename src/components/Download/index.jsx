@@ -14,7 +14,7 @@ const Download = () => {
         <DownloadWrap>
           <DownloadImageWrap>
             <DownloadImage
-              src={`./images/Growceria SVG_landscape all white.svg`}
+              src={`./images/growceria-svg-landscape-all-white.svg`}
             />
           </DownloadImageWrap>
           <DownloadHeading>

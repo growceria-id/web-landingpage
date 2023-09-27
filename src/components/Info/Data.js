@@ -1,5 +1,5 @@
-import OnlineGroceriesPana2 from "../../images/Online Groceries-pana-2.png";
-import AppInstallationCuate from "../../images/App installation-cuate.png";
+import OnlineGroceriesPana2 from "../../images/online-groceries-pana-2.png";
+import AppInstallationCuate from "../../images/app-installation.png";
 
 export const tentang = {
   id: "tentang",
