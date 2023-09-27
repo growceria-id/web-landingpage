@@ -13,7 +13,7 @@ import {
 import FacebookAppSymbol from "../../images/facebook-app-symbol.png";
 import InstagramAppSymbol from "../../images/instagram.png";
 import LinkedinAppSymbol from "../../images/linkedin-logo.png";
-import GrowceriaLandscapeAllWhite from "../../images/Growceria SVG_landscape all white.svg";
+import GrowceriaLandscapeAllWhite from "../../images/growceria-svg-landscape-all-white.svg";
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();

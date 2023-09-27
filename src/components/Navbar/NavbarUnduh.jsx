@@ -18,7 +18,7 @@ const NavbarUnduh = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavbarLogo to="/" onClick={toggleHome}>
-            <ImageLogo src={`./images/Growceria SVG_landscape all white.svg`} />
+            <ImageLogo src={`./images/growceria-svg-landscape-all-white.svg`} />
           </NavbarLogo>
           <NavBtn>
             <NavBtnLink to="/unduh" onClick={toggleHome}>

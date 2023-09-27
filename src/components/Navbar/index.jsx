@@ -12,7 +12,7 @@ import {
   NavMenu,
   NavbarContainer,
   NavbarLogo,
-  Navlinkr
+  Navlinkr,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavbarLogo to="/" onClick={toggleHome}>
-            <ImageLogo src={`./images/Growceria SVG_landscape all white.svg`} />
+            <ImageLogo src={`./images/growceria-svg-landscape-all-white.svg`} />
           </NavbarLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -105,9 +105,14 @@ const Navbar = ({ toggle }) => {
               </Navlinkr>
             </NavItem>
           </NavMenu>
-          
+
           <NavBtn>
-            <AnchorButton target="_blank" href='https://play.google.com/store/apps/details?id=com.jason1152.growceriamobileclient'>Unduh</AnchorButton>
+            <AnchorButton
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.jason1152.growceriamobileclient"
+            >
+              Unduh
+            </AnchorButton>
           </NavBtn>
         </NavbarContainer>
       </Nav>

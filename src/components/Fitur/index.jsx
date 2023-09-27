@@ -1,8 +1,8 @@
 import FiturDiv from "./FiturDiv";
 import { FiturContainer, FiturH1, FiturWrapper } from "./FiturElements";
-import DiscountCuate from "../../images/Discount-cuate.png";
-import BarcodeAmico from "../../images/Barcode-amico.png";
-import InNoTimeAmico from "../../images/In no time-amico.png";
+import DiscountCuate from "../../images/discount2.png";
+import BarcodeAmico from "../../images/barcode.png";
+import InNoTimeAmico from "../../images/in-no-time.png";
 
 const Fitur = () => {
   return (

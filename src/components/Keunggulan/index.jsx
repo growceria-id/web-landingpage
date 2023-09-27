@@ -9,7 +9,7 @@ import {
 } from "./KeunggulanElements";
 import { Point1, Point2, Point3, Point4 } from "./PointData";
 import PointDiv from "./PointDiv";
-import FlatIphone from "../../images/Flat iPhone.png";
+import FlatIphone from "../../images/flat-iphone.png";
 const Keunggulan = () => {
   return (
     <>
