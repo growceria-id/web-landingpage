@@ -3,7 +3,7 @@ name: Deploy static assets to Github Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['setup']
+    branches: ["setup"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,7 +16,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
@@ -40,15 +40,15 @@ jobs:
           cmd: install # runs `yarn install`
       - name: Build
         uses: borales/actions-yarn@v4
-        with: 
+        with:
           cmd: build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           # Upload dist repository
-          path: './dist'
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
