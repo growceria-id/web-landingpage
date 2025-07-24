@@ -1,30 +1,28 @@
 import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import Info from "../components/Info";
-import { tentang, unduh } from "../components/Info/Data";
+import Headline from "../components/Headline";
 import Fitur from "../components/Fitur";
 import Bantuan from "../components/Bantuan";
-import Keunggulan from "../components/Keunggulan";
+import Partners from "../components/Partners";
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <Info {...tentang}/>
+            <Headline 
+            title="Menyuplai kebutuhan bahan-bahan segar bagi bisnis anda"
+            description="Mempermudah UMKM dalam menemukan bahan dasar produksi dengan kualitas dan harga yang kompetitif untuk meningkatkan profit dan kepuasan pelanggan"
+            button="Beli Sekarang"
+            buttonHref="https://wa.me/6281919071301"
+            alignRight={false}
+            image="./home-banner.webp"
+            />
             <Fitur />
-            <Keunggulan />
+            <Partners />
             <Bantuan />
-            <Info {...unduh}/>
         </>
     )
 }
 
-export default Home
+export default Home;

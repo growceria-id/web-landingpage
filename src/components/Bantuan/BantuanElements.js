@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const BantuanContainer = styled.div`
-  padding-top: 20px;
+  max-width: 1800px;
+  margin:auto;
+  padding-top: 5rem;
   padding-bottom: 50px;
   max-height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('bantuan-background.webp');
+  background-size: contain;
 
   @media screen and (max-width: 768px) {
     max-height: 1100px;

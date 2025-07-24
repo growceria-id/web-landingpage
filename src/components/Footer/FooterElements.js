@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
   height: 100%;
@@ -7,6 +8,9 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  max-width: 1800px;
+  margin: auto;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 30px;
@@ -73,11 +77,71 @@ export const ImgJudul = styled.h3`
   color: #fff;
 `;
 
-export const Deskripsi = styled.p`
+export const Deskripsi = styled.a`
+  text-decoration: none;
   font-size: 16px;
   text-align: left;
   color: #fff;
 `;
+
+export const FooterHeadlineContainer = styled.div`
+  max-width: 1800px;
+  margin: auto;
+  
+  background: linear-gradient(to bottom, rgba(251, 145, 226, 0.8),
+    rgba(247, 231, 242, 0.8)), url(footer-background.jpeg);
+  background-size: cover;
+`
+
+export const FooterHeadlineWrapper = styled.div`
+  max-width: 1024px;
+  margin: auto;
+  padding: 5rem 0;
+  text-align: center;
+  font-weight: bold;
+`
+
+export const FooterHeadlineTitle = styled.div`
+  color : #FFF;
+  font-size: 3rem;
+  padding: 1rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+`
+
+export const FooterHeadlineDescription = styled.div`
+  font-size: 1.5rem;
+  padding: 1rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+`
+
+export const FooterHeadlineButton = styled.div`
+  font-size 2rem;
+
+  margin: 3rem auto;
+
+  a {
+    border-radius: .5rem;
+    color: #8C2C6C;
+    background: #FFF;
+    padding: 1rem;
+    text-decoration: none;
+    color: #8C2C6C;
+
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+
+  }
+  a:hover {
+    color: #FFF;
+    background-color: #8C2C6C;
+  }
+`
 
 // /* Footer */
 

@@ -1,21 +1,24 @@
 import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-import { AnchorButton } from "../ButtonElement";
 import {
   ImageLogo,
   MobileIcon,
   Nav,
-  NavBtn,
   NavItem,
+  NavItemEmpty,
   NavLinks,
   NavMenu,
   NavbarContainer,
-  NavbarLogo,
-  Navlinkr,
+  NavLinkHighlightOnActive,
+  NavLinkHighlight,
+  NavLinksContact,
 } from "./NavbarElements";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = ({ toggle }) => {
+  const { pathname } = useLocation();
+
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -38,82 +41,73 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavbarLogo to="/" onClick={toggleHome}>
-            <ImageLogo src={`./images/growceria-svg-landscape-all-white.svg`} />
-          </NavbarLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
+            <NavItem to="/" onClick={toggleHome} span={2}>
+              <ImageLogo src={`/growceria-logo.png`} />
+            </NavItem>
+            <NavItemEmpty span={3.5}></NavItemEmpty>
+            <NavItem span={1.5}>
               <NavLinks
-                to="tentang"
+                to="/"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
               >
-                Tentang
+                <NavLinkHighlightOnActive className={pathname === '/' ? 'active' : ''}>
+                  Home
+                </NavLinkHighlightOnActive> 
               </NavLinks>
             </NavItem>
-            <NavItem>
+            <NavItem span={1.5}>
               <NavLinks
-                to="fitur"
+                to="produk"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
               >
-                Fitur
+                <NavLinkHighlightOnActive className={pathname === '/produk' ? 'active' : ''}>
+                  Produk
+                </NavLinkHighlightOnActive> 
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem span={1.5}>
               <NavLinks
                 to="keunggulan"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                // offset={-80}
               >
-                Keunggulan
+                Blog
               </NavLinks>
-            </NavItem>
-            <NavItem>
+            </NavItem> */}
+            <NavItem span={2}>
               <NavLinks
-                to="bantuan"
+                to="about-us"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                // offset={-80}
               >
-                Bantuan
+                <NavLinkHighlightOnActive className={pathname === '/about-us' ? 'active' : ''}>
+                  About Us
+                </NavLinkHighlightOnActive> 
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <Navlinkr
-                to="/syarat-ketentuan"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-              >
-                Syarat dan Ketentuan
-              </Navlinkr>
+            <NavItem span={1.5}>
+              <NavLinksContact href="https://wa.me/6281919071301">
+                <NavLinkHighlight>Contact</NavLinkHighlight>
+              </NavLinksContact>
             </NavItem>
           </NavMenu>
 
-          <NavBtn>
-            <AnchorButton
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.jason1152.growceriamobileclient"
-            >
-              Unduh
-            </AnchorButton>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>

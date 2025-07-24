@@ -9,10 +9,16 @@ import {
   ImgWrap,
   Judul,
   SmallImg,
+  FooterHeadlineContainer,
+  FooterHeadlineWrapper,
+  FooterHeadlineTitle,
+  FooterHeadlineDescription,
+  FooterHeadlineButton,
 } from "./FooterElements";
 import FacebookAppSymbol from "../../images/facebook-app-symbol.png";
 import InstagramAppSymbol from "../../images/instagram.png";
 import LinkedinAppSymbol from "../../images/linkedin-logo.png";
+import TiktokAppSymbol from "../../images/tiktok.png";
 import GrowceriaLandscapeAllWhite from "../../images/growceria-svg-landscape-all-white.svg";
 const Footer = () => {
   const toggleHome = () => {
@@ -21,6 +27,19 @@ const Footer = () => {
 
   return (
     <>
+      <FooterHeadlineContainer>
+        <FooterHeadlineWrapper>
+          <FooterHeadlineTitle>
+            Menyuplai kebutuhan bahan-bahan segar bagi bisnis anda
+          </FooterHeadlineTitle>
+          <FooterHeadlineDescription>
+            Mempermudah UMKM dalam menemukan bahan dasar produksi dengan kualitas dan harga yang kompetitif untuk meningkatkan profit dan kepuasan pelanggan
+          </FooterHeadlineDescription>
+          <FooterHeadlineButton>
+            <a href="https://wa.me/6281919071301">Hubungi Kami</a>
+          </FooterHeadlineButton>
+        </FooterHeadlineWrapper>
+      </FooterHeadlineContainer>
       <FooterContainer>
         <FooterWrapper>
           <Column>
@@ -34,11 +53,11 @@ const Footer = () => {
           </Column>
           <Column>
             <Judul>Hubungi Kami</Judul>
-            <Deskripsi>growceria.id@gmail.com</Deskripsi>
+            <Deskripsi href="mailto:info@growceria.com">info@growceria.com</Deskripsi>
           </Column>
           <Column>
             <Judul>Phone</Judul>
-            <Deskripsi>+62 830 76876322</Deskripsi>
+            <Deskripsi href="https://wa.me/6281919071301">+62 819-1907-1301</Deskripsi>
           </Column>
           <Column>
             <ImgJudul>Social Media</ImgJudul>
@@ -51,6 +70,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/company/growceria">
                 <SmallImg src={LinkedinAppSymbol} />
+              </a>
+              <a href="https://www.tiktok.com/@growceria.id">
+                <SmallImg src={TiktokAppSymbol} />
               </a>
             </ImgWrap>
           </Column>

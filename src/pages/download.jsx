@@ -12,4 +12,4 @@ const DownloadPage = () => {
   );
 };
 
-export default DownloadPage
+export default DownloadPage;
