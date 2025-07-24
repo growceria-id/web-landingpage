@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FiturContainer = styled.div`
   height: 100%;
-  padding-top: 65px;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,6 +74,8 @@ export const FiturH1 = styled.h1`
   font-weight: bold;
   color: #000;
   margin-bottom: 64px;
+  padding: 1rem;
+  text-align: center;
 
   @media screen and (max-width: 480px) {
     font-size: 26px;

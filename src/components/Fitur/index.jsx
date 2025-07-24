@@ -8,16 +8,16 @@ const Fitur = () => {
   return (
     <>
       <FiturContainer id="fitur">
-        <FiturH1>Fitur</FiturH1>
+        <FiturH1>Kenapa Harus Beli di growceria</FiturH1>
         <FiturWrapper>
           <FiturDiv
             icon={DiscountCuate}
-            heading="Fleksibilitas Harga"
+            heading="Harga Kompetitif"
             desc="Pemberian harga yang menganut prinsip Economic of Scale dimana pembelian yang lebih banyak akan mendapatkan harga yang lebih murah"
           />
           <FiturDiv
             icon={BarcodeAmico}
-            heading="MOQ"
+            heading="Minimal MOQ"
             desc="MOQ yang rendah ditujukan pada pelaku usaha mikro, kecil, dan menengah untuk meningkatkan keuntungan dan fleksibilitas"
           />
           <FiturDiv

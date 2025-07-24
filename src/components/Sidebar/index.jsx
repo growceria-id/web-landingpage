@@ -9,13 +9,13 @@ const Sidebar = ({isOpen, toggle}) => {
     </Icon>
     <SidebarWrapper>
         <SidebarMenu>
-            <SidebarLink to='tentang' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Tentang</SidebarLink>
-            <SidebarLink to='fitur' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Fitur</SidebarLink>
-            <SidebarLink to='keunggulan' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Keunggulan</SidebarLink>
-            <SidebarLink to='bantuan' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Bantuan</SidebarLink>
+            <SidebarLink to='/' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Home</SidebarLink>
+            <SidebarLink to='/produk' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Produk</SidebarLink>
+            {/* <SidebarLink to='keunggulan' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Blog</SidebarLink> */}
+            <SidebarLink to='/about-us' onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80}>About Us</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-            <SidebarRoute to='/unduh'>Unduh</SidebarRoute>
+            <SidebarRoute to='/unduh'>Contact</SidebarRoute>
         </SideBtnWrap>
     </SidebarWrapper>
   </SidebarContainer>

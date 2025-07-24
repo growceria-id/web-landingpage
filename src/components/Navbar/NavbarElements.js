@@ -3,10 +3,10 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: #8C2C6C;
-    /*background: ${({scrollNav}) => (scrollNav ? '#8C2C6C' : 'transparent')}; */
-    height: 80px;
-    /* margin-top: -80px; */
+    max-width: 1800px;
+    margin: auto;
+    background: #FFF;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,24 +23,33 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 160px;
     z-index: 1;
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
+    width: 1200px;
+
+    @media (max-width: 1300px) {
+        width: 80%;
+    }
+
+    @media (max-width: 850px) {
+        width: 100%; /* Optional: full width on smaller screens */
+        padding: 0 1rem;
+    }
 `
 
 export const NavbarLogo = styled(LinkR)`
+    width: 10%;
     justify-self: flex-start;
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-left: 24px;  
 `
 
 export const ImageLogo = styled.img`
-    max-width: 300px;
-    height: 100%;
+    max-height: 80%;
+    max-width: 100%;
+    object-fit: contain;
 `
 
 export const MobileIcon = styled.div`
@@ -51,10 +60,10 @@ export const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
+        transform: translate(-100%, 50%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #fff;
+        color: #8C2C6C;
     }
 `
 
@@ -63,7 +72,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -71,35 +80,74 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
+    display: flex;
+    text-align: center;
+    flex: 0 0 ${({ span }) => (span ? `${(span / 12) * 100}%` : 'auto')};
+    max-width: ${({ span }) => (span ? `${(span / 12) * 100}%` : 'auto')};
+    height: 80px;
+    
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+`
+
+export const NavItemEmpty = styled.li`
+    display: flex;
+    text-align: center;
+    flex: 0 0 ${({ span }) => (span ? `${(span / 12) * 100}%` : 'auto')};
+    max-width: ${({ span }) => (span ? `${(span / 12) * 100}%` : 'auto')};
     height: 80px;
 `
 
-export const NavLinks = styled(LinkS)`
-    color: #fff;
+export const NavLinks = styled(LinkR)`
+    font-weight: bold;
+    color: #000;
+    margin: auto;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+`
 
-    &.active {
-        border-bottom: 3px solid #fff;
-    }
+export const NavLinksContact = styled.a`
+    font-weight: bold;
+    color: #000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
 `
 
 export const Navlinkr = styled(LinkR)`
-    color: #fff;
+    font-weight: bold;
+    color: #000;
+    margin: auto;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+`
 
+export const NavLinkHighlightOnActive = styled.span`
     &.active {
-        border-bottom: 3px solid #fff;
+        color: white;
+        background-color: #8C2C6C;
+        padding: .5rem;
+        border-radius: .5rem; 
     }
+`
+
+export const NavLinkHighlight = styled.span`
+    color: #8C2C6C;
+    background-color: rgba(255, 173, 228, 0.5);
+    padding: .5rem;
+    border-radius: .5rem; 
 `
 
 export const NavBtn = styled.nav` /* why nav? */

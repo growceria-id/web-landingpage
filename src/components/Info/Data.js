@@ -4,9 +4,9 @@ import AppInstallationCuate from "../../images/app-installation.png";
 export const tentang = {
   id: "tentang",
   top: true,
-  imgStart: true,
+  // imgStart: false,
   img: OnlineGroceriesPana2,
-  alt: "growceria",
+  alt: "",
   topLine: "",
   headline: "Menyuplai kebutuhan bahan-bahan segar bagi bisnis Anda",
   description:

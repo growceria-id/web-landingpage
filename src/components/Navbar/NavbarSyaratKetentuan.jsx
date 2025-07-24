@@ -16,7 +16,7 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavbarLogo to="/">
-            <ImageLogo src={`./images/growceria-svg-landscape-all-white.svg`} />
+            <ImageLogo src={`/growceria-logo.svg`} />
           </NavbarLogo>
           <NavMenu>
             <NavItem>
