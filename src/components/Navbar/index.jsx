@@ -102,7 +102,7 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem span={1.5}>
-              <NavLinksContact href="https://wa.me/6281919071301">
+              <NavLinksContact href="https://wa.me/6281919071301?text=Hi%20kak,%20mau%20cek%20untuk%20produknya%20apa%20saja%20beserta%20dengan%20harganya%20kak">
                 <NavLinkHighlight>Contact</NavLinkHighlight>
               </NavLinksContact>
             </NavItem>

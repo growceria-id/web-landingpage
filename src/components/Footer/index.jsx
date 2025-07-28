@@ -36,7 +36,7 @@ const Footer = () => {
             Mempermudah UMKM dalam menemukan bahan dasar produksi dengan kualitas dan harga yang kompetitif untuk meningkatkan profit dan kepuasan pelanggan
           </FooterHeadlineDescription>
           <FooterHeadlineButton>
-            <a href="https://wa.me/6281919071301">Hubungi Kami</a>
+            <a href="https://wa.me/6281919071301?text=Hi%20kak,%20mau%20cek%20untuk%20produknya%20apa%20saja%20beserta%20dengan%20harganya%20kak">Hubungi Kami</a>
           </FooterHeadlineButton>
         </FooterHeadlineWrapper>
       </FooterHeadlineContainer>
@@ -57,7 +57,7 @@ const Footer = () => {
           </Column>
           <Column>
             <Judul>Phone</Judul>
-            <Deskripsi href="https://wa.me/6281919071301">+62 819-1907-1301</Deskripsi>
+            <Deskripsi href="https://wa.me/6281919071301?text=Hi%20kak,%20mau%20cek%20untuk%20produknya%20apa%20saja%20beserta%20dengan%20harganya%20kak">+62 819-1907-1301</Deskripsi>
           </Column>
           <Column>
             <ImgJudul>Social Media</ImgJudul>
