@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <script>
+    // GitHub Pages SPA fallback.
+    // Redirects /katalog, /tentang, etc. back to index.html
+    // so React Router can handle them client-side.
+    // Static pages under /blog/ have their own index.html and are served directly.
+    var l = window.location;
+    l.replace(l.protocol + '//' + l.host + '/?p=' + encodeURIComponent(l.pathname + l.search) + l.hash);
+  </script>
+</head>
+</html>
