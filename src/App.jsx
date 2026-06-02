@@ -1,37 +1,30 @@
-import React, {useState} from 'react';
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import "./App.css";
-import Whatsapp from "./components/Whatsapp";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages";
-import Produk from "./pages/produk";
-import AboutUs from "./pages/about-us";
-import DownloadPage from "./pages/download";
-import KetentuanDanService from "./pages/ketentuan-dan-service";
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import Katalog from './pages/Katalog.jsx';
+import CaraKerja from './pages/CaraKerja.jsx';
+import Tentang from './pages/Tentang.jsx';
+import Blog from './pages/Blog.jsx';
+import { waLink } from './utils.js';
 
-function App() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-      setIsOpen(!isOpen)
-  }
-
+function FloatingWA() {
   return (
-    <Router basename="/">
-      <Whatsapp/>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/produk" element={<Produk/>}/>
-        <Route path="/about-us" element={<AboutUs/>}/>
-        <Route path="/unduh" element={<DownloadPage />} exact />
-      </Routes>
-      <Footer />
-    </Router>
+    <a className="float-wa" href={waLink("Halo Growceria, saya mau tanya katalog & harga.")} target="_blank" rel="noreferrer" aria-label="Chat WhatsApp">
+      <img src="/whatsapp.svg" width="26" height="26" alt="WhatsApp"/>
+    </a>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/katalog" element={<Katalog />} />
+        <Route path="/cara-kerja" element={<CaraKerja />} />
+        <Route path="/tentang" element={<Tentang />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+      <FloatingWA />
+    </>
+  );
+}

@@ -1,0 +1,4 @@
+# Netlify SPA fallback: serve index.html for any path Netlify can't match to a real file.
+# Static files (dist/blog/<slug>/index.html, assets, etc.) are resolved BEFORE this rule,
+# so they're served as-is. React Router handles the rest from index.html.
+/*  /index.html  200
