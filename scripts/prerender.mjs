@@ -28,7 +28,12 @@ if (!existsSync(DIST)) {
 const server = await preview({ preview: { port: 0 } });
 const BASE_URL = server.resolvedUrls.local[0].replace(/\/$/, '');
 
-const browser = await puppeteer.launch({ headless: 'new' });
+const browser = await puppeteer.launch({
+  headless: 'new',
+  // CI runners (e.g. GitHub Actions) don't support Chrome's sandbox
+  // without extra privileges, so disable it there.
+  args: process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : [],
+});
 const page = await browser.newPage();
 
 try {
