@@ -93,7 +93,7 @@ export const CLIENTS = [
   { mark:"B", name:"Bittersweet by Najla",       cat:"Restoran",              loc:"Jakarta",   img:"/partners/bittersweet.jpg" },
   { mark:"S", name:"Se'Indonesia",               cat:"Restoran Chain",  loc:"Nasional",  img:"/partners/seindonesia.webp" },
   { mark:"S", name:"Sate Khas Senayan",         cat:"Restoran Chain",  loc:"Jakarta",   img:"/partners/SATE KHAS SENAYAN.jpg" },
-  { mark:"Y", name:"Yellow Fit Chicken",        cat:"Katering",    loc:"Nasional",  img:"/partners/YELLOW FIT CHICKEN.png" },
+  { mark:"Y", name:"Yellow Fit Kitchen",        cat:"Katering",    loc:"Nasional",  img:"/partners/YELLOW FIT KITCHEN.png" },
 ];
 
 export const NAV_LINKS = [
