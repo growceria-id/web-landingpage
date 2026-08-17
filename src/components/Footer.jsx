@@ -39,6 +39,8 @@ export default function Footer() {
               <li><Link to="/katalog">Katalog Produk</Link></li>
               <li><Link to="/cara-kerja">Cara Kerja</Link></li>
               <li><Link to="/tentang">Tentang Kami</Link></li>
+              <li><Link to="/syarat-ketentuan">Syarat & Ketentuan</Link></li>
+              <li><Link to="/kebijakan-privasi">Kebijakan Privasi</Link></li>
             </ul>
           </div>
           <div>
