@@ -4,6 +4,8 @@ import Katalog from './pages/Katalog.jsx';
 import CaraKerja from './pages/CaraKerja.jsx';
 import Tentang from './pages/Tentang.jsx';
 import Blog from './pages/Blog.jsx';
+import SyaratKetentuan from './pages/SyaratKetentuan.jsx';
+import KebijakanPrivasi from './pages/KebijakanPrivasi.jsx';
 import { waLink } from './utils.js';
 
 function FloatingWA() {
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/cara-kerja" element={<CaraKerja />} />
         <Route path="/tentang" element={<Tentang />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/syarat-ketentuan" element={<SyaratKetentuan />} />
+        <Route path="/kebijakan-privasi" element={<KebijakanPrivasi />} />
       </Routes>
       <FloatingWA />
     </>

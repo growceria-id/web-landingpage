@@ -18,7 +18,7 @@ import puppeteer from 'puppeteer';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, '..', 'dist');
-const ROUTES = ['/', '/katalog', '/cara-kerja', '/tentang', '/blog'];
+const ROUTES = ['/', '/katalog', '/cara-kerja', '/tentang', '/blog', '/syarat-ketentuan', '/kebijakan-privasi'];
 
 if (!existsSync(DIST)) {
   console.error('[prerender] dist/ not found. Run `npm run build` first.');
