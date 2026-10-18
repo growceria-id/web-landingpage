@@ -313,6 +313,10 @@ nav ul a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;h
   .blog-content th,.blog-content td{padding:9px 10px}
 }
 
+/* Legal pages (e.g. Syarat & Ketentuan) — full-width column */
+.legal-content{max-width:100%}
+@media (max-width:560px){.legal-body{padding-top:36px}}
+
 /* Footer */
 footer{background:var(--cream);padding:64px 0 32px;border-top:1px solid var(--line)}
 .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px}
