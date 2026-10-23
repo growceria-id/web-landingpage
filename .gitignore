@@ -2,11 +2,10 @@
 node_modules/
 
 # Build output
+.next/
+out/
 dist/
-dist-ssr/
-
-# Vite cache
-.vite/
+next-env.d.ts
 
 # Local env files
 .env

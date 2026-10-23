@@ -1,100 +1,13 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+'use client';
+
+import { useState } from "react";
+import Link from 'next/link';
 import Nav from "../components/Nav.jsx";
 import Footer from "../components/Footer.jsx";
 import CTABlock from "../components/CTABlock.jsx";
 import QuoteModal from "../components/QuoteModal.jsx";
-import Seo from "../components/Seo.jsx";
-import {
-  TweaksPanel,
-  TweakSection,
-  TweakSelect,
-  useTweaks,
-} from "../components/TweaksPanel.jsx";
 import { CLIENTS } from "../data.js";
 import { waLink } from "../utils.js";
-
-const FONT_PAIRS = {
-  "Poppins (sans)": {
-    display: "'Poppins', sans-serif",
-    body: "'Inter', sans-serif",
-  },
-  // — Professional profile picks —
-  "Raleway + Mulish": {
-    display: "'Raleway', sans-serif",
-    body: "'Mulish', sans-serif",
-  },
-  "Merriweather + Source Sans 3": {
-    display: "'Merriweather', serif",
-    body: "'Source Sans 3', sans-serif",
-  },
-  "Lora + Nunito": { display: "'Lora', serif", body: "'Nunito', sans-serif" },
-  "Crimson Pro + Work Sans": {
-    display: "'Crimson Pro', serif",
-    body: "'Work Sans', sans-serif",
-  },
-  "Josefin Sans + Mulish": {
-    display: "'Josefin Sans', sans-serif",
-    body: "'Mulish', sans-serif",
-  },
-  // — Existing —
-  Fraunces: { display: "'Fraunces', serif", body: "'Inter', sans-serif" },
-  "Playfair Display": {
-    display: "'Playfair Display', serif",
-    body: "'Manrope', sans-serif",
-  },
-  "DM Serif Display": {
-    display: "'DM Serif Display', serif",
-    body: "'Inter', sans-serif",
-  },
-  "Cormorant Garamond": {
-    display: "'Cormorant Garamond', serif",
-    body: "'Inter', sans-serif",
-  },
-  "Libre Caslon Text": {
-    display: "'Libre Caslon Text', serif",
-    body: "'Inter', sans-serif",
-  },
-  "Instrument Serif": {
-    display: "'Instrument Serif', serif",
-    body: "'Plus Jakarta Sans', sans-serif",
-  },
-  "Space Grotesk (sans)": {
-    display: "'Space Grotesk', sans-serif",
-    body: "'Inter', sans-serif",
-  },
-  "Manrope (sans)": {
-    display: "'Manrope', sans-serif",
-    body: "'Inter', sans-serif",
-  },
-};
-
-function applyFonts(displayKey) {
-  const pair = FONT_PAIRS[displayKey] || FONT_PAIRS["Fraunces"];
-  const css = `
-    .hero h1, .page-hero h1, .cat-head h2, .how h2, .clients h2, .cta h2,
-    .faq h2, .about-intro h2, .values-pillars h2, .timeline h2,
-    .vs-item h4, .step h3, .pillar h3, .card h3, .card .price,
-    .cli .n, .testimonial q, .tl-item .yr, .modal h3, .logo,
-    .about-intro .stat-card .s .n, .cta .info .line b, .modal .qrow b {
-      font-family: ${pair.display} !important;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-    }
-    body, nav.top ul, .btn, .chip, .desc, .sub, p, .vs-item p, .step p,
-    .pillar p, .cli .cat, .cli .loc, .who, .foot ul, .foot h5, input, textarea, select {
-      font-family: ${pair.body} !important;
-    }
-    body { font-family: ${pair.body} !important; }
-  `;
-  let style = document.getElementById("tweak-fonts");
-  if (!style) {
-    style = document.createElement("style");
-    style.id = "tweak-fonts";
-    document.head.appendChild(style);
-  }
-  style.textContent = css;
-}
 
 function Hero() {
   return (
@@ -116,7 +29,7 @@ function Hero() {
               langsung via WhatsApp.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <Link className="btn btn-primary" to="/katalog">
+              <Link className="btn btn-primary" href="/katalog">
                 Lihat Katalog
                 <svg
                   width="14"
@@ -308,40 +221,8 @@ export default function Home() {
     setQuoteOpen(true);
   };
 
-  const defaultsEl = document.getElementById("tweak-defaults");
-  const defaults = defaultsEl
-    ? JSON.parse(defaultsEl.textContent.replace(/\/\*EDITMODE-[A-Z]+\*\//g, ""))
-    : { displayFont: "Libre Caslon Text" };
-  const [t, setTweak] = useTweaks(defaults);
-  useEffect(() => {
-    applyFonts(t.displayFont);
-  }, [t.displayFont]);
-
-  const homeJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Growceria",
-    image: "https://growceria.com/growceria-logo.png",
-    url: "https://growceria.com/",
-    telephone: "+62-819-1907-1301",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Jakarta",
-      addressCountry: "ID",
-    },
-    areaServed: ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"],
-    description:
-      "Supplier bahan makanan segar B2B Jakarta — sayur, bumbu, telur, dan rempah untuk restoran, hotel, catering, dan cloud kitchen.",
-  };
-
   return (
     <>
-      <Seo
-        title="Supplier Bahan Makanan Segar B2B Jakarta — Growceria"
-        description="Supplier sayuran, bumbu, telur & rempah segar untuk restoran, hotel, catering & cloud kitchen di Jakarta. MOQ rendah, kirim harian via WhatsApp."
-        path="/"
-        jsonLd={homeJsonLd}
-      />
       <Nav active="home" />
       <Hero />
       <ValueStrip />
@@ -365,18 +246,6 @@ export default function Home() {
         product={quoteProduct}
         onClose={() => setQuoteOpen(false)}
       />
-      <TweaksPanel title="Tweaks">
-        <TweakSection
-          label="Typography"
-          hint="Pasangan tipografi modern & formal."
-        />
-        <TweakSelect
-          label="Display font"
-          value={t.displayFont}
-          options={Object.keys(FONT_PAIRS)}
-          onChange={(v) => setTweak("displayFont", v)}
-        />
-      </TweaksPanel>
     </>
   );
 }

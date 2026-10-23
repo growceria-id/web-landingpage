@@ -1,9 +1,10 @@
+'use client';
+
 import { useState } from 'react';
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
 import CTABlock from '../components/CTABlock.jsx';
 import QuoteModal from '../components/QuoteModal.jsx';
-import Seo from '../components/Seo.jsx';
 
 function PageHero() {
   return (
@@ -72,11 +73,6 @@ export default function Tentang() {
   const openQuote = () => setQuoteOpen(true);
   return (
     <>
-      <Seo
-        title="Tentang Growceria — Supplier Sayuran Restoran Jakarta"
-        description="Growceria — supplier sayuran restoran Jakarta yang berpihak pada UMKM kuliner. Rantai pasok adil dari petani langsung ke dapur Anda."
-        path="/tentang"
-      />
       <Nav active="tentang"/>
       <PageHero/>
       <Intro/>

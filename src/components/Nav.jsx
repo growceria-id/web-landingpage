@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { NAV_LINKS } from '../data.js';
 import { waLink } from '../utils.js';
 
@@ -15,7 +17,7 @@ export default function Nav({ active }) {
             : <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
           }
         </button>
-        <Link className="logo nav-logo" to="/" onClick={() => setOpen(false)}>
+        <Link className="logo nav-logo" href="/" onClick={() => setOpen(false)}>
           <img src="/growceria-icon.png" alt="Growceria"/>
         </Link>
         <ul>
@@ -23,7 +25,7 @@ export default function Nav({ active }) {
             <li key={l.id}>
               {l.static
                 ? <a className={active===l.id?'active':''} href={l.href}>{l.label}</a>
-                : <Link className={active===l.id?'active':''} to={l.href}>{l.label}</Link>}
+                : <Link className={active===l.id?'active':''} href={l.href}>{l.label}</Link>}
             </li>
           ))}
         </ul>
@@ -38,7 +40,7 @@ export default function Nav({ active }) {
           {NAV_LINKS.map(l => (
             l.static
               ? <a key={l.id} className={active===l.id?'active':''} href={l.href}>{l.label}</a>
-              : <Link key={l.id} className={active===l.id?'active':''} to={l.href} onClick={() => setOpen(false)}>{l.label}</Link>
+              : <Link key={l.id} className={active===l.id?'active':''} href={l.href} onClick={() => setOpen(false)}>{l.label}</Link>
           ))}
         </div>
       )}

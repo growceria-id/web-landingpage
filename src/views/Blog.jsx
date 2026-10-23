@@ -1,6 +1,5 @@
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
-import Seo from '../components/Seo.jsx';
 import { BLOG_POSTS } from '../data.js';
 
 function formatDate(iso) {
@@ -10,11 +9,6 @@ function formatDate(iso) {
 export default function Blog() {
   return (
     <>
-      <Seo
-        title="Blog Growceria — Tips Supplier Sayuran & Operasional Dapur"
-        description="Artikel & panduan dari Growceria, supplier bahan makanan segar B2B Jakarta — tips memilih supplier, cek kualitas sayuran, harga grosir."
-        path="/blog"
-      />
       <Nav active="blog" />
 
       <section className="page-hero">

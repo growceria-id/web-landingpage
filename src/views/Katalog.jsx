@@ -1,9 +1,10 @@
+'use client';
+
 import { useState } from 'react';
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
 import CTABlock from '../components/CTABlock.jsx';
 import QuoteModal from '../components/QuoteModal.jsx';
-import Seo from '../components/Seo.jsx';
 import { PRODUCT_GROUPS } from '../data.js';
 import { waLink } from '../utils.js';
 
@@ -79,11 +80,6 @@ export default function Katalog() {
   const openQuote = (p) => { setQuoteProduct(p); setQuoteOpen(true); };
   return (
     <>
-      <Seo
-        title="Supplier Telur Ayam & Rempah Segar B2B — Katalog Growceria"
-        description="Katalog supplier telur ayam B2B Jakarta dan supplier rempah-rempah segar restoran Jakarta. Sayuran, bumbu, telur & rempah — tanya harga via WhatsApp."
-        path="/katalog"
-      />
       <Nav active="katalog"/>
       <PageHero/>
       <FullCatalog onQuote={openQuote}/>

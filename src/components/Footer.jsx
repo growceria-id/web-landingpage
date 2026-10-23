@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { waLink } from '../utils.js';
 
 const IconInstagram = () => (
@@ -35,10 +35,10 @@ export default function Footer() {
           <div>
             <h5>Platform</h5>
             <ul>
-              <li><Link to="/">Beranda</Link></li>
-              <li><Link to="/katalog">Katalog Produk</Link></li>
-              <li><Link to="/cara-kerja">Cara Kerja</Link></li>
-              <li><Link to="/tentang">Tentang Kami</Link></li>
+              <li><Link href="/">Beranda</Link></li>
+              <li><Link href="/katalog">Katalog Produk</Link></li>
+              <li><Link href="/cara-kerja">Cara Kerja</Link></li>
+              <li><Link href="/tentang">Tentang Kami</Link></li>
             </ul>
           </div>
           <div>
