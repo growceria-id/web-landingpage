@@ -1,10 +1,8 @@
+import Link from 'next/link';
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
 import { BLOG_POSTS } from '../data.js';
-
-function formatDate(iso) {
-  return new Date(iso).toLocaleDateString('id-ID', { day:'numeric', month:'long', year:'numeric' });
-}
+import { formatDate } from '../utils.js';
 
 export default function Blog() {
   return (
@@ -23,8 +21,7 @@ export default function Blog() {
         <div className="wrap">
           <div className="blog-grid">
             {BLOG_POSTS.map(post => (
-              // Plain <a> — each post is a static HTML page, not a React route
-              <a key={post.slug} className="blog-card" href={`/blog/${post.slug}/`}>
+              <Link key={post.slug} className="blog-card" href={`/blog/${post.slug}/`}>
                 <div className="blog-card-meta">
                   <span className="blog-cat">{post.category}</span>
                   <span className="blog-read">{post.readTime}</span>
@@ -35,7 +32,7 @@ export default function Blog() {
                   <span>{formatDate(post.date)}</span>
                   <span className="blog-cta">Baca →</span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
