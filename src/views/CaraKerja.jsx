@@ -1,9 +1,10 @@
+'use client';
+
 import { useState } from "react";
 import Nav from "../components/Nav.jsx";
 import Footer from "../components/Footer.jsx";
 import CTABlock from "../components/CTABlock.jsx";
 import QuoteModal from "../components/QuoteModal.jsx";
-import Seo from "../components/Seo.jsx";
 import { waLink } from "../utils.js";
 
 function PageHero() {
@@ -160,11 +161,6 @@ export default function CaraKerja() {
   const openQuote = () => setQuoteOpen(true);
   return (
     <>
-      <Seo
-        title="Cara Kerja Growceria — Pesan Bahan Segar via WhatsApp"
-        description="Empat langkah pesan bahan makanan segar di Growceria — cek katalog, chat WhatsApp, konfirmasi, terima kiriman. MOQ rendah, kirim harian."
-        path="/cara-kerja"
-      />
       <Nav active="cara" />
       <PageHero />
       <HowSteps />
