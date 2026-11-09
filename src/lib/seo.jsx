@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://growceria.com';
-const DEFAULT_OG_IMAGE = `${SITE_URL}/growceria-logo.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/growceria-logo.png`;
 
 const ORGANIZATION_JSONLD = {
   '@context': 'https://schema.org',
@@ -12,14 +12,14 @@ const ORGANIZATION_JSONLD = {
 };
 
 // Replaces the old react-helmet <Seo> component: same tags, built at compile time.
-export function pageMetadata({ title, description, path = '/', ogImage = DEFAULT_OG_IMAGE }) {
+export function pageMetadata({ title, description, path = '/', ogImage = DEFAULT_OG_IMAGE, type = 'website' }) {
   const canonical = `${SITE_URL}${path}`;
   return {
     title,
     description,
     alternates: { canonical },
     openGraph: {
-      type: 'website',
+      type,
       siteName: 'Growceria',
       title,
       description,
